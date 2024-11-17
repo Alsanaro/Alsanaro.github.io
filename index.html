@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZISCAN</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/d3388682c8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="archivos/favicon/favicon-16x16.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="fixed-top">
+            <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <h1 class="textoGral mx-auto"><a href="index.html">ZISCAN</a></h1>
+                        <ul class="navbar-nav mx-auto d-flex justify-content-evenly w-100">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="pages/tienda.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    NEW IN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="pages/tienda.html">TODOS LOS INGRESOS</a></li>
+                                    <li><a class="dropdown-item" href="pages/tienda.html">ZISCAN x B.BUNNY</a></li>
+                                    <li><a class="dropdown-item" href="pages/tienda.html">TEMPORADA S25</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="pages/tienda.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    SUMMER
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="pages/tienda.html">TODO EN SUMMER</a></li>
+                                    <li><a class="dropdown-item" href="pages/tienda.html">CAMISAS</a></li>
+                                    <li><a class="dropdown-item" href="pages/tienda.html">SHORTS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="pages/tienda.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    T-SHIRTS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="pages/tienda.html">TODO EN T-SHIRTS</a></li>
+                                    <li><a class="dropdown-item" href="pages/tienda.html">OVERSIZE</a></li>
+                                    <li><a class="dropdown-item" href="pages/tienda.html">BASICAS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="pages/tienda.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    HOODIES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="pages/tienda.html">TODO EN HOODIES</a></li>
+                                    <li><a class="dropdown-item" href="pages/tienda.html">OVERSIZE</a></li>
+                                    <li><a class="dropdown-item" href="pages/tienda.html">BOXY FIT</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/tienda.html">ALL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/perfil.html"><i class="fa-regular fa-user"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main class="colorPrincipal">
+
+        <!--Buscador productos-->
+        <div class="hero-section text-center d-flex align-items-center justify-content-center mb-4  " style="height: 100vh; background: url('archivos/imagenes/backgroundBuscador.jfif') no-repeat center center/cover;">
+            <div class="input-group" style="max-width: 500px; border-radius: 30px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+              <input type="text" class="form-control" placeholder="Buscar en nuestra tienda..." style="border: none;">
+              <button class="btn btn-danger" type="button" style="border-radius: 0;">Buscar</button>
+            </div>
+          </div>
+
+        <!--Carrusel de productos-->
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="archivos/imagenes/Nike Ebernon Low Prem - Sneaker - Black_White_Grey - Maat 40_5.jfif" class="d-block mx-auto img-fluid" alt="Sneakers Nike B&W">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="archivos/imagenes/nikejordan2.jfif" class="d-block mx-auto img-fluid" alt="Nike Jordan Grey">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="archivos/imagenes/nkejordan3.jfif" class="d-block mx-auto img-fluid" alt="Nike Jordan Orange">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+        <!--Video presentacion marca-->
+        <div class="container my-5">
+            <div class="row align-items-center">
+              <!-- Columna del video -->
+              <div class="col-md-6 order-md-1 order-2">
+                <video controls class="w-100" style="border-radius: 10px;">
+                  <source src="ruta-del-video.mp4" type="video/mp4">
+                  Tu navegador no soporta el video.
+                </video>
+              </div>
+              <!-- Columna de la descripción -->
+              <div class="col-md-6 order-md-2 order-1">
+                <h2 class="fs-4 mb-4 text-white">¿Quienes somos?</h2>
+                <p class="fs-6 text-white">
+                  Esta es una breve descripción de tu marca o producto. Aquí puedes añadir más información relevante 
+                  que complemente el video.
+                </p>
+              </div>
+            </div>
+          </div>
+        <div class="container-fluid position-relative" style="height: 100vh;">
+            <!-- Imagen de fondo -->
+            <img src="archivos/imagenes/backgroundBuscador.jfif" id="backgroundImage" class="background-image w-100 h-100 position-absolute top-0 start-0 object-fit-cover" alt="Imagen de fondo">
+          
+            <!-- Contenido sobre la imagen -->
+            <div class="row position-relative z-index-1 h-100">
+              <!-- Título en la parte derecha -->
+              <div class="col-lg-6 d-flex justify-content-center align-items-center text-light">
+                <h2 class="display-4">
+                    <span class="d-block">CLUB</span>
+                    <span class="d-block">ZISCAN</span>
+                </h2>
+              </div>
+              
+              <!-- Descripción con botón "Conocer más" en la parte derecha -->
+              <div class="col-lg-6 d-flex flex-column justify-content-center text-light">
+                <p class="lead mb-4">Una breve descripción sobre lo que representa la imagen, el propósito de tu marca o producto.</p>
+                <a href="pages/club.html" class="btn btn-danger">Conocer más</a>
+              </div>
+            </div>
+          </div>
+          
+    </main>
+      <footer class="bg-dark text-light py-5">
+        <div class="container">
+          <div class="footer-grid">
+            <!-- ACERCA DE ZISCAN -->
+            <div>
+              <ul class="list-unstyled">
+                <li><strong>ACERCA DE ZISCAN</strong></li>
+                <li><a href="#" class="text-light">¿Quienes somos?</a></li>
+                <li><a href="#" class="text-light">Noticias</a></li>
+                <li><a href="#" class="text-light">Roadmap</a></li>
+              </ul>
+            </div>
+      
+            <!-- CONTACTANOS -->
+            <div>
+              <ul class="list-unstyled">
+                <li><strong>CONTACTANOS</strong></li>
+                <li><a href="#" class="text-light">Soporte</a></li>
+                <li><a href="#" class="text-light">Trabaja con nosotros</a></li>
+              </ul>
+            </div>
+      
+            <!-- NOVEDADES -->
+            <div>
+              <ul class="list-unstyled">
+                <li><strong>NOVEDADES</strong></li>
+                <li><a href="#" class="text-light">Nuevos productos</a></li>
+                <li><a href="#" class="text-light">Colaboraciones</a></li>
+                <li><a href="#" class="text-light">Promociones</a></li>
+              </ul>
+            </div>
+      
+            <!-- Redes sociales -->
+            <div class="social-icons">
+              <a href="#" class="text-light"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-youtube fa-2x"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-discord fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-3">© 2024 ZISCAN Todos los derechos reservados</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
