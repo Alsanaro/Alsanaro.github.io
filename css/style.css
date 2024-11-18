@@ -16,9 +16,6 @@ ul {
     font-weight: bold;
 }
 
-/* Estilos main */
-
-
 input {
     font-size: 20px;
 }
@@ -51,10 +48,6 @@ h2 {
     margin-top: 20px;
 }
 
-/* Estilos generales */
-.colorPrincipal {
-    background-color: rgb(54, 54, 54);
-}
 
 .textoGral {
     color: #F3E0DE;
@@ -73,9 +66,8 @@ h3 {
 }
 
 body {
-    padding-top: 50px; /* Ajusta este valor a la altura de tu navbar */
+    padding-top: 50px; 
 }
-
 .infoProd {
     color: #2A1C1B;
     font-size: 50px;
@@ -139,33 +131,33 @@ body {
 
 .background-image {
     object-fit: cover;
-    /* Asegura que la imagen cubra toda la sección */
+   
     height: 100vh;
-    /* Ocupa todo el alto de la ventana */
+   
 }
 
 .text-light {
     color: white;
-    /* Hace el texto legible sobre la imagen */
+   
 }
 
 h2 span {
-    font-size: 6rem; /* Tamaño grande para las palabras */
+    font-size: 6rem;
     font-weight: bold;
   }
 
   h2 {
-    line-height: 1.2; /* Mejora la separación entre las palabras */
+    line-height: 1.2;
   }
 
   a.btn {
-    padding: 10px 20px; /* Ajusta el relleno del botón para que sea más pequeño */
-    background-color: #464646; /* Color personalizado */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 1.2rem; /* Ajusta el tamaño de la fuente si es necesario */
-    width: auto; /* Asegura que el botón no ocupe todo el ancho */
-    display: inline-block; /* Hace que el botón ocupe solo el espacio necesario */
-    text-align: center; /* Asegura que el texto esté centrado */
+    padding: 10px 20px;
+    background-color: #464646;
+    border-radius: 5px; 
+    font-size: 1.2rem;
+    width: auto; 
+    display: inline-block; 
+    text-align: center; 
 }
 
 .footer-grid {
@@ -199,9 +191,9 @@ h2 span {
   
   .social-icons {
     display: flex;
-    flex-direction: column; /* Cambiar a disposición vertical */
-    gap: 10px; /* Espacio entre los iconos */
-    align-items: center; /* Centrar los iconos */
+    flex-direction: column; 
+    gap: 10px;
+    align-items: center;
   }
   
   .social-icons a {
@@ -210,22 +202,27 @@ h2 span {
   }
   
   .social-icons a:hover {
-    color: #ff5e57; /* Efecto al pasar el cursor */
+    color: #ff5e57;
   }
   
+  .social-icons a i {
+    color: inherit; 
+    transition: color 0.3s;
+}
+
   footer p {
     color: white;
     font-size: 0.9rem;
   }
 
   .carousel-inner img {
-    max-height: 300px; /* Ajusta el alto de las imágenes del carrusel */
-    object-fit: cover; /* Asegura que las imágenes se ajusten sin deformarse */
+    max-height: 300px;
+    object-fit: cover; 
 }
 
 footer {
     position: relative;
-    z-index: 1; /* Asegura que el footer no se vea afectado por el carrusel */
+    z-index: 1; 
 }
 
 .colorPrincipal {
@@ -246,7 +243,8 @@ nav.navPerfil ul li a {
 }
 
 nav.navPerfil ul li a:hover {
-    background-color: #810202; /* Color de fondo al pasar el mouse */
-    color: #ffffff; /* Color de texto */
-    text-decoration: none;
+    background-color: #810202; 
+    color: #ffffff; 
+    text-decoration: none; 
 }
+
