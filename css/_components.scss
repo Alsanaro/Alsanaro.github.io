@@ -1,0 +1,72 @@
+.clubZiscan {
+    background-image: url(../archivos/imagenes/ClubZiscanFondoVideo.png);
+    background-size: cover;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 120px;
+}
+
+.redes i {
+    margin-top: 20px;
+}
+
+.infoProd {
+    color: $color-secundario;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talles {
+    text-align: center;
+    color: $color-secundario;
+    font-size: 20px;
+}
+
+.cabezaClub {
+    background-color: $color-secundario;
+    color: $color-primario;
+    text-align: center;
+    height: 480px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.planes {
+    color: $color-primario;
+    font-weight: 300;
+}
+
+.navPerfil {
+    font-size: 40px;
+    text-align: left;
+}
+
+.presentacionMarca {
+    margin: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.presentacionMarca video {
+    margin-left: 30px;
+    width: 50%;
+}
+
+.presentacionMarca p {
+    margin: 40px;
+}
+
+.navbar .nav-link {
+    color: $color-primario;
+}

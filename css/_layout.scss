@@ -1,0 +1,84 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.footer-grid ul {
+    padding-left: 0;
+}
+
+.footer-grid ul li {
+    margin-bottom: 8px;
+}
+
+.footer-grid ul li strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-grid a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-grid a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: $color-rojo;
+}
+
+.social-icons a i {
+    color: inherit;
+    transition: color 0.3s;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: $color-terciario;
+    color: white;
+}
+
+.carousel-inner img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+footer p {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.background-image {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.text-light {
+    color: white;
+}
+
+.footer-link {
+    font-size: 1.4rem; // Ajusta el tamaño de la fuente
+    text-decoration: none; // Sin subrayado
+}
+
+.footer-link:hover {
+    text-decoration: underline; // Subrayado al pasar el ratón
+}
