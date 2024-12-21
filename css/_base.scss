@@ -4,16 +4,39 @@ body {
     background-color: $color-secundario;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-style: italic;
     color: $color-primario;
 }
 
-h1 a, a {
-    color: $color-primario;
-    font-size: 35px;
-    text-decoration: none;
-}
+    h1 {
+        a {
+            color: $color-primario;
+            font-size: 35px;
+            text-decoration: none;
+        }
+    }
+
+    h2 {
+        font-size: 90px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.2;
+
+        span {
+            font-size: 6rem;
+            font-weight: bold;
+        }
+    }
+
+    h3 {
+        align-content: center;
+        font-weight: 500;
+        color: $color-secundario;
+        font-size: 35px;
+    }
 
 a {
     text-decoration: none;
@@ -27,35 +50,4 @@ ul {
 
 input {
     font-size: 20px;
-}
-
-h2 {
-    font-size: 90px;
-    font-style: italic;
-    font-weight: 300;
-}
-
-h2 span {
-    font-size: 6rem;
-    font-weight: bold;
-}
-
-h2 {
-    line-height: 1.2;
-}
-
-h3 {
-    align-content: center;
-    font-weight: 500;
-    color: $color-secundario;
-    font-size: 35px;
-}
-
-.textoGral {
-    color: $color-primario;
-}
-
-.fa-regular {
-    color: $color-primario;
-    font-size: 25px;
 }

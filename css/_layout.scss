@@ -2,83 +2,88 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-}
+  
+    ul {
+      padding-left: 0;
+  
+      li {
+        margin-bottom: 8px;
+  
+        strong {
+          font-size: 1.3rem;
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
-.footer-grid ul {
-    padding-left: 0;
-}
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      
+        a {
+          color: white;
+          transition: color 0.3s;
+          font-size: 30px;
+      
+          &:hover {
+            color: $color-rojo;
+          }
+      
+          i {
+            color: inherit;
+            font-size: 30px;
+            transition: color 0.3s;
+          }
+        }
+      }
 
-.footer-grid ul li {
-    margin-bottom: 8px;
-}
-
-.footer-grid ul li strong {
-    font-size: 1.3rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.footer-grid a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer-grid a:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-.social-icons a {
-    color: white;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: $color-rojo;
-}
-
-.social-icons a i {
-    color: inherit;
-    transition: color 0.3s;
-}
-
-footer {
+  }
+    
+  footer {
     position: relative;
     z-index: 1;
     background-color: $color-terciario;
     color: white;
-}
-
-.carousel-inner img {
-    max-height: 300px;
-    object-fit: cover;
-}
-
-footer p {
-    color: white;
-    font-size: 0.9rem;
-}
-
-.background-image {
+  
+    p {
+      color: white;
+      font-size: 0.9rem;
+    }
+  }
+  
+  .carousel-inner {
+    img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+  
+  .background-image {
     object-fit: cover;
     height: 100vh;
-}
-
-.text-light {
+  }
+  
+  .text-light {
     color: white;
-}
-
-.footer-link {
-    font-size: 1.4rem; 
+  }
+  
+  .footer-link {
+    font-size: 1.4rem;
     text-decoration: none;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-}
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }

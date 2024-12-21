@@ -63,22 +63,26 @@ header {
 }
 
 
-.social-icons a {
-    display: inline-block; // 
-    animation: social-icons-hover 0.6s ease-in-out;
-    animation-fill-mode: forwards;
-    transition: transform 0.3s ease;
+.social-icons {
+    a {
+        display: inline-block; // 
+        animation: social-icons-hover 0.6s ease-in-out;
+        animation-fill-mode: forwards;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            animation: social-hover 0.6s ease-in-out;
+        }
+    }
 }
 
-.social-icons a:hover {
-    animation: social-hover 0.6s ease-in-out;
-}
+h2 {
+    span:nth-child(1) {
+        animation: slide-in 2s ease-out forwards;
+    }
 
-h2 span:nth-child(1) {
-    animation: slide-in 2s ease-out forwards;
-}
-
-h2 span:nth-child(2) {
-    animation: slide-in-right 2s ease-out forwards;
-    animation-delay: 0.1s;
+    span:nth-child(2) {
+        animation: slide-in-right 2s ease-out forwards;
+        animation-delay: 0.1s;
+    }
 }
