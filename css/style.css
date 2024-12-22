@@ -131,6 +131,21 @@ input {
   font-size: 25px;
 }
 
+.hero-section {
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .row.g-4 .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
