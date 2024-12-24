@@ -98,40 +98,78 @@
         <section>
             <!--Informacion del producto-->
             <div class="infoProd d-flex align-items-center">
-                <img src="../archivos/imagenes/Hoodie1.jfif" alt="Hoodie Adidas Rojo" style="width: 40%; margin: 20px;">
+                <div class="bg-light d-flex justify-content-center align-items-center rounded">
+                    <img src="../archivos/imagenes/Hoodie1.jfif" alt="Hoodie Adidas Rojo"
+                        style="width: 50%; margin: 30px;">
+                </div>
                 <div class="product-details" style="margin-left: 20px;">
                     <h2 class="text-light">Hoodie Adidas Red</h2>
                     <p class="price text-light">$100.000</p>
-                    <button class="btn btn-outline-danger">
+                    <button class="btn btn-outline-danger btn-lg">
                         <i class="fa-solid fa-bookmark"></i> Guardar en favoritos
                     </button>
                 </div>
             </div>
-            <div class="talles my-4">
+            <div class="tabla-talles">
                 <h4>Tabla de Talles</h4>
-                <img src="../archivos/imagenes/TablaDeTalles.png" alt="Tabla de talles" class="img-fluid"
-                    style="max-width: 50%; margin: 0 auto;">
-                <p class="text-light">(Descripcion detallada del producto)</p>
-                <button class="btn btn-danger w-50">Añadir al carrito</button>
+                <table class="table table-striped text-light">
+                    <thead>
+                        <tr>
+                            <th>TAMAÑO</th>
+                            <th>PECHO (cm)</th>
+                            <th>CINTURA (cm)</th>
+                            <th>CADERA (cm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S</td>
+                            <td>90-95</td>
+                            <td>70-75</td>
+                            <td>90-95</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>95-100</td>
+                            <td>75-80</td>
+                            <td>95-100</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>100-105</td>
+                            <td>80-85</td>
+                            <td>100-105</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>105-110</td>
+                            <td>85-90</td>
+                            <td>105-110</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
         <section>
-            <h4 class="my-4 text-light">Envios gratis a partir de compras mayores a $150.000</h4>
+            <h4 class="my-4 text-light text-center">Envios gratis a partir de compras mayores a $150.000</h4>
             <!--Carrusel productos relacionados-->
-            <h3>Productos que podrian interesarte...</h3>
+            <h4 class="my-4 text-light text-center">Productos que podrian interesarte...</h4>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../archivos/imagenes/Nike Ebernon Low Prem - Sneaker - Black_White_Grey - Maat 40_5.jfif"
-                            class="d-block mx-auto img-fluid" alt="Sneakers Nike B&W">
+                        <a href="../pages/tienda.html"><img
+                                src="../archivos/imagenes/Nike Ebernon Low Prem - Sneaker - Black_White_Grey - Maat 40_5.jfif"
+                                class="d-block mx-auto img-fluid fotosProd" alt="Sneakers Nike B&W"
+                                style="border-radius: 25px;"></a>
                     </div>
                     <div class="carousel-item">
-                        <img src="../archivos/imagenes/nikejordan2.jfif" class="d-block mx-auto img-fluid"
-                            alt="Nike Jordan Grey">
+                        <a href="../pages/tienda.html"><img src="../archivos/imagenes/nikejordan2.jfif"
+                                class="d-block mx-auto img-fluid fotosProd" alt="Nike Jordan Grey"
+                                style="border-radius: 25px;"></a>
                     </div>
                     <div class="carousel-item">
-                        <img src="../archivos/imagenes/nkejordan3.jfif" class="d-block mx-auto img-fluid"
-                            alt="Nike Jordan Orange">
+                        <a href="../pages/tienda.html"><img src="../archivos/imagenes/nkejordan3.jfif"
+                                class="d-block mx-auto img-fluid fotosProd" alt="Nike Jordan Orange"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -184,7 +222,8 @@
                 <div class="social-icons">
                     <a href="#" class="text-light"><i class="fab fa-facebook fa-sm"></i></a>
                     <a href="#" class="text-light"><i class="fab fa-youtube fa-sm"></i></a>
-                    <a href="https://www.instagram.com/lautasaanchez/" class="text-light"><i class="fab fa-instagram fa-sm"></i></a>
+                    <a href="https://www.instagram.com/lautasaanchez/" class="text-light"><i
+                            class="fab fa-instagram fa-sm"></i></a>
                     <a href="#" class="text-light"><i class="fab fa-discord fa-sm"></i></a>
                 </div>
             </div>

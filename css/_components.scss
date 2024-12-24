@@ -11,13 +11,16 @@
     display: flex;
     flex-direction: column;
     margin: 20px 0 0 120px;
-    
+
     i {
         margin-top: 20px;
     }
 }
 
-
+.fotosProd {
+    border-radius: 25px;
+    border: 2px solid black;
+}
 
 .infoProd {
     color: $color-secundario;
@@ -60,17 +63,24 @@
     align-items: center;
 }
 
-.presentacionMarca video {
-    margin-left: 30px;
-    width: 50%;
+.presentacionMarca {
+    video {
+        margin-left: 30px;
+        width: 50%;
+    }
 }
 
-.presentacionMarca p {
-    margin: 40px;
+.presentacionMarca {
+    p {
+        margin: 40px;
+    }
 }
 
-.navbar .nav-link {
-    color: $color-primario;
+.navbar {
+
+    .nav-link {
+        color: $color-primario;
+    }
 }
 
 .textoGral {
@@ -80,4 +90,60 @@
 .fa-regular {
     color: $color-primario;
     font-size: 25px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    .price {
+        font-size: 2.25rem;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin: 20px;
+    }
+}
+
+.tabla-talles {
+    width: 80%;
+    margin: 20px auto;
+
+    h4 {
+        text-align: center;
+        color: $color-primario;
+        font-size: 1.5rem;
+        margin: 20px;
+    }
+
+    table {
+        width: 100;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    }
 }
