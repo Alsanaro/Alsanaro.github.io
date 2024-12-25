@@ -1,9 +1,8 @@
 .clubZiscan {
+    @include center-flex();
+    height: 580px;
     background-image: url(../archivos/imagenes/ClubZiscanFondoVideo.png);
     background-size: cover;
-    height: 580px;
-    display: flex;
-    justify-content: center;
 }
 
 .redes {
@@ -38,13 +37,11 @@
 }
 
 .cabezaClub {
+    @include center-flex(column);
     background-image: url(../archivos/imagenes/ComingSoonZiscan.png);
     color: $color-primario;
     text-align: center;
     height: 480px;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .planes {
@@ -93,10 +90,8 @@
 }
 
 .product-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    @include center-flex(column, 15px);
+    text-align: center;
 
     .price {
         font-size: 2.25rem;
@@ -108,6 +103,72 @@
         font-size: 3.2rem;
         font-weight: 700;
         margin: 20px;
+    }
+
+    .d-flex {
+        @include center-flex(row, 15px);
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 1.25rem;
+        font-weight: 450;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .quantity-selector {
+        @include center-flex(column);
+
+        label {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 120px;
+            padding: 8px;
+            text-align: center;
+        }
+    }
+
+    .size-selector {
+        @include center-flex(column);
+
+        label {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        select {
+            padding: 8px;
+            width: 120px;
+        }
+    }
+
+    .btn-outline-danger {
+        background-color: transparent;
+        color: #dc3545;
+        border: 1px solid #dc3545;
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: $color-primario;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+
+    .mb-3 {
+        margin-bottom: 1rem;
     }
 }
 
