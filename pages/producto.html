@@ -105,13 +105,28 @@
                 <div class="product-details" style="margin-left: 20px;">
                     <h2 class="text-light">Hoodie Adidas Red</h2>
                     <p class="price text-light">$100.000</p>
-                    <button class="btn btn-outline-danger btn-lg">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <div class="quantity-selector">
+                            <label for="quantity" class="text-light">Cantidad:</label>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1" class="form-control">
+                        </div>
+                        <div class="size-selector">
+                            <label for="size" class="text-light">Talle:</label>
+                            <select id="size" name="size" class="form-select">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-danger">Agregar al carrito</button>
+                    </div>
+                    <button class="btn btn-outline-danger btn-lg mb-3">
                         <i class="fa-solid fa-bookmark"></i> Guardar en favoritos
                     </button>
                 </div>
             </div>
             <div class="tabla-talles">
-                <h4>Tabla de Talles</h4>
                 <table class="table table-striped text-light">
                     <thead>
                         <tr>
